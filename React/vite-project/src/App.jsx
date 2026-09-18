@@ -1,13 +1,14 @@
-
+import Friends from './components/pages/Friends'
+import { Routes, Route } from "react-router-dom"
 
 function App() {
-
-
   return (
     <>
-     <h1 className="text-1xl font-bold text-red-700">
-    Hello world!
-  </h1>
+    Hi
+    <Routes>
+     <Route path="/group2/dashboard" element={<Friends />} />
+     {/* <Route path="/" element={<Friends />} /> */}
+    </Routes>
     </>
   )
 }
